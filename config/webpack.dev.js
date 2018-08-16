@@ -77,7 +77,7 @@ module.exports = function(options) {
      * See: https://webpack.js.org/configuration/dev-server/
      */
     devServer: {
-      port: 3000,
+      port: 4200,
       host: 'localhost',
       historyApiFallback: true,
       contentBase: helpers.root('dist'),

@@ -46,7 +46,7 @@ function getUglifyOptions(supportES2015, enableCompress) {
 
 module.exports = function(env) {
   const ENV = (process.env.NODE_ENV = process.env.ENV = 'production');
-
+ 
   return webpackMerge(commonConfig({ env: ENV }), {
     mode: 'production',
 
@@ -93,7 +93,7 @@ module.exports = function(env) {
     module: {
       rules: [
         /**
-         * Extract CSS files from .src/styles directory to external CSS file
+         * Extract CSS files from .src/assets/**.css directory to external CSS file
          */
         {
           test: /\.css$/,

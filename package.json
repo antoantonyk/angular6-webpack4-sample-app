@@ -4,9 +4,9 @@
   "description": "Angular 6 with Webpack 4 sample app",
   "scripts": {
     "start": "npm run serve",
-    "serve": "npm run webpack-dev-server -- --open --progress --profile  --watch --content-base src/",
-    "build:prod": "npm run clean && npm run webpack -- --env.production --progress --profile --bail",
-    "build:dev": "npm run clean &&  npm run webpack -- --env.development --progress --profile --bail",
+    "serve": "npm run webpack-dev-server -- --env.env=dev --open --progress --profile  --watch --content-base src/",
+    "build:prod": "npm run clean && npm run webpack -- --env.env=prod --progress --profile --bail",
+    "build:dev": "npm run clean &&  npm run webpack -- --env.env=dev --progress --profile --bail",
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack",
     "clean": "rimraf dist"
